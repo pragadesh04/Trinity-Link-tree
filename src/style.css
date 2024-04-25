@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.541);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    border-radius: 5rem;
+    backdrop-filter: blur(2px);
+}
+
+.left {
+    margin-left: 20px;
+    color: aliceblue;
+}
+
+.nav li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.nav a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 0.5rem;
+}
+
+.container .fa {
+    margin-right: 20px;
+}
+
+.fa-envelope, .fa-whatsapp, .fa-instagram, .fa-youtube, .fa-map-marker {
+    color: white;
+    transition: 0.2s;
+}
+
+.container {
+    font-size: 25px;
+    font-family: "jersey 25", serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 94vh;
+}
+
+.links:hover{
+    background-color: rgb(0, 136, 255);
+    color: black !important;
+    animation: zoom 0.5s;
+}
+
+@keyframes zoom{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.links {
+    margin-top: 1px;
+    background-color: black;
+    width: 15rem; /* Adjusted to fit the screen */
+    max-width: 15rem; /* Added maximum width for better responsiveness */
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 5rem;
+}
+
+.container ul {
+    padding: 0;
+}
+
+.container a {
+    text-decoration: none;
+    color: white;
+}
+
+.container li {
+    list-style: none;
+}
